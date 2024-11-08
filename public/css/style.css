@@ -1,0 +1,374 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 100px;}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f0db4f;
+}
+
+/* Intro Section Styling */
+.intro-text {
+    height: 500px;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/pexels-andreaedavis-3653849.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    border-radius: 0px;
+}
+
+.intro-text h1 {
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+    background-color: rgba(157, 156, 199, 0.5);
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: #09084b;
+}
+
+.intro-text p {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+/* About Section Styling */
+#about {
+    padding: 60px 20px;
+    background-color: #fff;
+    margin: 40px auto;
+    max-width: 1000px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-image {
+    width: 250px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    flex-shrink: 0;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h2 {
+    margin-bottom: 15px;
+    font-size: 2rem;
+    color: #333;
+}
+
+.about-text p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+footer .social-media {
+    margin-top: 10px;
+}
+
+footer .social-media a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+footer .social-media a:hover {
+    color: #f0db4f;
+}
+/* Skills Section Styling */
+#skills {
+    padding: 60px 20px;
+    background-color: #f7f9fc;
+    border-radius: 10px;
+    margin: 30px auto;
+    max-width: 900px;
+    box-shadow: 0 0 15px rgba(67, 103, 223, 0.1);
+}
+
+.skills-container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #333333;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-list h2 {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    color: #444;
+}
+
+.skill-bar {
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    position: relative;
+    width: 100%;
+    height: 40px;
+    overflow: hidden;
+}
+
+.skill-level {
+    height: 100%;
+    border-radius: 8px;
+    text-align: right;
+    padding-right: 15px;
+    color: #fff;
+    line-height: 40px;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: width 1s ease-in-out;
+}
+
+.html {
+    width: 90%;
+    background-color: #e34c26;
+}
+
+.css {
+    width: 80%;
+    background-color: #264de4;
+}
+
+.js {
+    width: 75%;
+    background-color: #f0db4f;
+    color: #000;
+}
+
+.react {
+    width: 70%;
+    background-color: #61DBFB;
+    color: #000;
+}
+
+.sql {
+    width: 85%;
+    background-color: #e38d13;
+}
+
+.git {
+    width: 80%;
+    background-color: #f34f29;
+}
+
+/* Adding hover effect for skill bars */
+.skill-bar:hover .skill-level {
+    width: calc(var(--skill-level) + 5%);
+}
+
+/* Projects Section Styling */
+#projects {
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 900px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.projects-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f3ecec;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+#h {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-size: 30px;
+    text-align: center;
+    color: #083c77;
+}
+
+.intro {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+.project-item {
+    margin-bottom: 40px;
+    padding: 20px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.project-item:last-child {
+    border-bottom: none;
+}
+
+.project-item h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.project-description {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.project-features {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.project-features li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.project-features li strong {
+    color: #007bff;
+}
+
+.technologies {
+    font-size: 1rem;
+    color: #555;
+}
+
+.technologies strong {
+    color: #333;
+}
+/* Contact Section Styling */
+#contact {
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 600px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#contact h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+p{
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #000;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+form textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+form button {
+    margin-top: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+form button:hover {
+    background-color: #555;
+}
